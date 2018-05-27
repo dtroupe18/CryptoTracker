@@ -11,16 +11,16 @@ import UIKit
 struct CoinData {
     
     let symbols = ["BTC", "ETH", "LTC"]
-    var coins: [Coin]()
+    var coins = [Coin]()
     
     mutating func getCoinData(completion: @escaping (Error?) -> ()) {
-        CryptoCompare.getCoinData(symbols: symbols, onSuccess: { coins in
-            self.coins = coins
-            completion(nil)
-        }, onError: { error in
-            completion(error)
-            print("error: \(error)")
-        })
+//        CryptoCompare.getCoinData(symbols: symbols, onSuccess: { coins in
+//            self.coins = coins
+//            completion(nil)
+//        }, onError: { error in
+//            completion(error)
+//            print("error: \(error)")
+//        })
     }
     
     func numberOfSections() -> Int {

@@ -39,7 +39,7 @@ class CryptoCompare: APIClient {
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary {
                         print("json: \(json)")
                         
-                        var coins: [Coin] = [Coins]()
+                        var coins: [Coin] = [Coin]()
                         for symbol in symbols {
                             if let dict = json[symbol] as? [String: Any] {
                                 if let price = dict["USD"] as? Double {

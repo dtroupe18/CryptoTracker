@@ -14,9 +14,9 @@ class CryptoTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coinData.getCoinData {
-            <#code#>
-        }
+//        coinData.getCoinData {
+//            
+//        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
